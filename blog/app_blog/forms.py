@@ -17,12 +17,6 @@ class profileinfoform(forms.ModelForm):
         model = login
         fields = ('profile_pic',)
 
-
-
-
-
-
-
 class blog_form(forms.ModelForm):
     title= forms.CharField()
     blogs = forms.CharField(widget=forms.Textarea)
