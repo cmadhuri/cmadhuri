@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{%extends "app_blog/base.html"%}
+{% load static %}
+    <title>home page</title>
+    <link rel="stylesheet" href="{% static 'css/blogsstyle.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+{% block body_block%}
+<div id= "himg"
+  class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+  style=" background-image: url('https://mdbootstrap.com/img/new/slides/003.jpg'); height: 450px;"
+>
+  <h1 id ="head" class="mb-3 h2">
+    LEARN MORE <br> TO <br> SHARE MORE!!!
+    </h1>
+<P>Share your life experiences here.</P>
+
+</div>
+<div id= "button" >
+<button style="border: 4px solid black; border-radius: 20px;" >
+<a href="{% url 'app_blog:post'%}" >
+  <img src="{%static 'images/share.png'%}" alt="">
+</a> </button>  
+
+<!-- <h1>{{name1|lower}} {{name2|add:"MILLIONS"}}</h1> -->
+</div>
+  
+{% endblock %}
+
