@@ -1,4 +1,4 @@
 # BLOG-SITE
 Config files for my GitHub profile.
 
-THIS IS A BLOG PAGE.
+this is a blog page
